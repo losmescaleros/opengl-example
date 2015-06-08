@@ -51,11 +51,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>extern\glew-1.12.0\include\;extern\glm-0.9.6.3\;include\;extern\freeglut-2.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions);WIN32</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Projects\GitHub\opengl-example\extern\glew-1.12.0\lib\Debug\Win32;extern\freeglut-2.8.1\lib\x86\Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>freeglut_static.lib;glew32sd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>extern\glew-1.12.0\lib\Debug\Win32;extern\freeglut-2.8.1\lib\x86\Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;freeglut_static.lib;glew32s.lib;glew32.lib</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>
     </Link>
@@ -68,24 +69,47 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>extern\glew-1.12.0\include\;extern\glm-0.9.6.3\;include\;extern\freeglut-2.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\Projects\GitHub\opengl-example\extern\glew-1.12.0\lib\Release\Win32;extern\freeglut-2.8.1\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>freeglut_static.lib;glew32s.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>extern\glew-1.12.0\lib\Release\Win32;extern\freeglut-2.8.1\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;freeglut_static.lib;glew32s.lib</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\Core\ShaderLoader.cpp" />
+    <ClCompile Include="src\AssetManagers\ModelManager.cpp" />
+    <ClCompile Include="src\AssetManagers\SceneManager.cpp" />
+    <ClCompile Include="src\AssetManagers\ShaderManager.cpp" />
+    <ClCompile Include="src\Core\Init\DebugOutput.cpp" />
+    <ClCompile Include="src\Core\Init\InitGlew.cpp" />
+    <ClCompile Include="src\Core\Init\InitGlut.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Rendering\Models\Model.cpp" />
+    <ClCompile Include="src\Rendering\Models\Quad.cpp" />
+    <ClCompile Include="src\Rendering\Models\Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\AssetManagers\SceneManager.h" />
+    <ClInclude Include="include\Core\Context.h" />
+    <ClInclude Include="include\Core\FrameBuffer.h" />
+    <ClInclude Include="include\Core\Init\DebugOutput.h" />
+    <ClInclude Include="include\Core\Init\IListener.h" />
+    <ClInclude Include="include\Core\Init\InitGlew.h" />
+    <ClInclude Include="include\Core\Init\InitGlut.h" />
+    <ClInclude Include="include\Core\Window.h" />
     <ClInclude Include="include\Main.h" />
-    <ClInclude Include="src\Core\ShaderLoader.h" />
+    <ClInclude Include="include\AssetManagers\ModelManager.h" />
+    <ClInclude Include="include\AssetManagers\ShaderManager.h" />
+    <ClInclude Include="include\Rendering\IGameObject.h" />
+    <ClInclude Include="include\Rendering\Models\Model.h" />
+    <ClInclude Include="include\Rendering\Models\Quad.h" />
+    <ClInclude Include="include\Rendering\Models\Triangle.h" />
+    <ClInclude Include="include\Rendering\Vertex.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\Shaders\Fragment_Shader.glsl" />

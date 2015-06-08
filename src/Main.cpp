@@ -1,55 +1,36 @@
 #include <Main.h>
-#include "Core\ShaderLoader.h"
+#include <AssetManagers/ShaderManager.h>
+#include <AssetManagers/ModelManager.h>
+#include <Core/Init/InitGlut.h>
+#include <AssetManagers/SceneManager.h>
 
+using namespace Core;
+using namespace Core::Init;
+
+AssetManagers::ModelManager* modelManager;
+AssetManagers::ShaderManager* shaderManager;
 GLuint program;
 
-void RenderScene();
-void Init();
-
+/// <summary>
+/// Entry point into the program
+/// </summary>
+/// <param name="argc">The argc.</param>
+/// <param name="argv">The argv.</param>
+/// <returns></returns>
 int main(int argc, char* argv[])
 {
-	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
-	glutInitWindowPosition(300, 300);
-	glutInitWindowSize(800, 600);
-	glutCreateWindow("OpenGL: Making a Triangle");
+	Window window(std::string("OpenGL Window"),
+		400, 200, 
+		800, 600, 
+		true);
+	Context context(4, 3, true);
+	FrameBuffer frameBuffer(true, true, true, true);
+	InitGlut::Init(window, context, frameBuffer);
+	IListener* scene = new AssetManagers::SceneManager();
+	InitGlut::SetListener(scene);
 
-	glewInit();
-	if (glewIsSupported("GL_VERSION_3_3"))
-	{
-		std::cout << "GLEW Version is 3.3\n";
-	}
-	else
-	{
-		std::cout << "GLEW Version 3.3 not supported\n";
-	}
-
-	Init();
-
-	glutDisplayFunc(RenderScene);
-	glutMainLoop();
-	glDeleteProgram(program);
+	InitGlut::Run();
+	
+	delete scene;
 	return 0;
-}
-
-void Init()
-{
-	glEnable(GL_DEPTH_TEST);
-
-	Core::ShaderLoader shaderLoader;
-	program = shaderLoader.CreateProgram("..\\src\\Shaders\\Vertex_Shader.glsl", "..\\src\\Shaders\\Fragment_Shader.glsl");
-
-	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-}
-
-void RenderScene()
-{
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glClearColor(0.0, 0.0, 1.0, 1.0);
-
-	glUseProgram(program);
-
-	glDrawArrays(GL_TRIANGLES, 0, 3);
-
-	glutSwapBuffers();
 }
