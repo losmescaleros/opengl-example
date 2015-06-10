@@ -5,10 +5,14 @@ using namespace AssetManagers;
 SceneManager::SceneManager()
 {
 	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_CULL_FACE);
 	shaderManager = new ShaderManager();
 	shaderManager->CreateProgram("colorShader",
 		"..\\src\\Shaders\\Vertex_Shader.glsl",
 		"..\\src\\Shaders\\Fragment_Shader.glsl");
+	shaderManager->CreateProgram("colorShaderMvp",
+		"..\\src\\Shaders\\SimpleShader.vert",
+		"..\\src\\Shaders\\SimpleShader.frag");
 	modelManager = new ModelManager();
 }
 
@@ -27,6 +31,7 @@ void SceneManager::NotifyDisplayFrame()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glClearColor(0.0, 0.0, 0.0, 1.0);
+	glClearDepth(1.0f);
 
 	modelManager->Draw();
 }

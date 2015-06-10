@@ -45,6 +45,12 @@
     <ClCompile Include="src\Core\Init\DebugOutput.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Rendering\Models\Cube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rendering\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Main.h">
@@ -95,9 +101,17 @@
     <ClInclude Include="include\Core\Init\DebugOutput.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\Rendering\Models\Cube.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Rendering\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\Shaders\Fragment_Shader.glsl" />
     <None Include="src\Shaders\Vertex_Shader.glsl" />
+    <None Include="src\Shaders\SimpleShader.vert" />
+    <None Include="src\Shaders\SimpleShader.frag" />
   </ItemGroup>
 </Project>

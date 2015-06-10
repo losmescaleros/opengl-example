@@ -2,6 +2,7 @@
 #include <vector>
 #include <Rendering/IGameObject.h>
 #define MEMBER_OFFSET(s,m) ((char*)NULL + (offsetof(s,m)))
+#define BUFFER_OFFSET(offset) ((void*)(offset))
 
 namespace Rendering
 {

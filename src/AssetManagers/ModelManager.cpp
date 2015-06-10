@@ -5,7 +5,7 @@ using namespace Rendering;
 
 ModelManager::ModelManager()
 {
-	Models::Triangle* triangle = new Models::Triangle();
+	/*Models::Triangle* triangle = new Models::Triangle();
 	triangle->SetProgram(ShaderManager::GetShader("colorShader"));
 	triangle->Create();
 	modelList["triangle"] = triangle;
@@ -13,7 +13,12 @@ ModelManager::ModelManager()
 	Models::Quad* quad = new Models::Quad();
 	quad->SetProgram(ShaderManager::GetShader("colorShader"));
 	quad->Create();
-	modelList["quad"] = quad;
+	modelList["quad"] = quad;*/
+
+	Models::Cube* cube = new Models::Cube();
+	cube->SetProgram(ShaderManager::GetShader("colorShaderMvp"));
+	cube->Create();
+	modelList["cube"] = cube;
 }
 
 /// <summary>

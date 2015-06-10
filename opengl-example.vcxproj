@@ -89,6 +89,8 @@
     <ClCompile Include="src\Core\Init\InitGlew.cpp" />
     <ClCompile Include="src\Core\Init\InitGlut.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Rendering\Camera.cpp" />
+    <ClCompile Include="src\Rendering\Models\Cube.cpp" />
     <ClCompile Include="src\Rendering\Models\Model.cpp" />
     <ClCompile Include="src\Rendering\Models\Quad.cpp" />
     <ClCompile Include="src\Rendering\Models\Triangle.cpp" />
@@ -105,7 +107,9 @@
     <ClInclude Include="include\Main.h" />
     <ClInclude Include="include\AssetManagers\ModelManager.h" />
     <ClInclude Include="include\AssetManagers\ShaderManager.h" />
+    <ClInclude Include="include\Rendering\Camera.h" />
     <ClInclude Include="include\Rendering\IGameObject.h" />
+    <ClInclude Include="include\Rendering\Models\Cube.h" />
     <ClInclude Include="include\Rendering\Models\Model.h" />
     <ClInclude Include="include\Rendering\Models\Quad.h" />
     <ClInclude Include="include\Rendering\Models\Triangle.h" />
@@ -113,6 +117,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="src\Shaders\Fragment_Shader.glsl" />
+    <None Include="src\Shaders\SimpleShader.frag" />
+    <None Include="src\Shaders\SimpleShader.vert" />
     <None Include="src\Shaders\Vertex_Shader.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
