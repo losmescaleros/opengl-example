@@ -6,12 +6,12 @@ using namespace Rendering;
 ModelManager::ModelManager()
 {
 	/*Models::Triangle* triangle = new Models::Triangle();
-	triangle->SetProgram(ShaderManager::GetShader("colorShader"));
+	triangle->SetProgram(ShaderManager::GetShader("colorShaderMvp"));
 	triangle->Create();
-	modelList["triangle"] = triangle;
+	modelList["triangle"] = triangle;*/
 
-	Models::Quad* quad = new Models::Quad();
-	quad->SetProgram(ShaderManager::GetShader("colorShader"));
+	/*Models::Quad* quad = new Models::Quad();
+	quad->SetProgram(ShaderManager::GetShader("colorShaderMvp"));
 	quad->Create();
 	modelList["quad"] = quad;*/
 
@@ -65,11 +65,11 @@ void ModelManager::Update()
 	}
 }
 
-void ModelManager::Draw()
+void ModelManager::Draw(Camera* camera)
 {
 	for (auto model : modelList)
 	{
-		model.second->Draw();
+		model.second->Draw(camera);
 	}
 }
 

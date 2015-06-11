@@ -1,9 +1,13 @@
 #include <Core/Init/InitGlut.h>
+#include <ctime>
 
 using namespace Core::Init;
 
 Core::IListener* InitGlut::listener = NULL;
 Core::Window InitGlut::window;
+int g_A, g_D, g_Q, g_E;
+std::clock_t prevTicks;
+std::clock_t currTicks;
 
 void InitGlut::Init(const Core::Window& window,
 	const Core::Context& context,
@@ -45,6 +49,10 @@ void InitGlut::Init(const Core::Window& window,
 	glutCloseFunc(CloseCallback);
 	glutDisplayFunc(DisplayCallback);
 	glutReshapeFunc(ReshapeCallback);
+	glutKeyboardFunc(Keyboard);
+	glutKeyboardUpFunc(KeyboardUp);
+	glutSpecialFunc(Special);
+	glutSpecialUpFunc(SpecialUp);
 
 	Init::InitGlew::Init();
 #if _DEBUG
@@ -59,6 +67,7 @@ void InitGlut::Init(const Core::Window& window,
 	glutSetOption(GLUT_ACTION_ON_WINDOW_CLOSE, 
 		GLUT_ACTION_GLUTMAINLOOP_RETURNS);
 	PrintOpenGlInfo(window, context);
+	prevTicks = std::clock();
 }
 
 void InitGlut::Run()
@@ -75,6 +84,12 @@ void InitGlut::Close()
 
 void InitGlut::IdleCallback()
 {
+	currTicks = std::clock();
+	float deltaTicks = (float)(currTicks - prevTicks);
+	prevTicks = currTicks;
+	float deltaTime = deltaTicks / (float)CLOCKS_PER_SEC;
+	Camera* camera = listener->GetActiveCamera();
+	camera->Translate(glm::vec3(g_D - g_A, 0, 0) * deltaTime);
 	glutPostRedisplay();
 }
 
@@ -105,6 +120,62 @@ void InitGlut::ReshapeCallback(int width, int height)
 void InitGlut::CloseCallback()
 {
 	Close();
+}
+
+void InitGlut::Keyboard(unsigned char c, int x, int y)
+{
+	switch (c)
+	{
+	case 'a':
+	case 'A':
+		g_A = 1;
+		  break;
+	case 'd':
+	case 'D':
+		g_D = 1;
+		  break;
+	case 'q':
+	case 'Q':
+		g_Q = 1;
+		break;
+	case 'e':
+	case 'E':
+		g_E = 1;
+		break;
+	}
+}
+
+void InitGlut::KeyboardUp(unsigned char c, int x, int y)
+{
+	switch (c)
+	{
+	case 'a':
+	case 'A':
+		g_A = 0;
+		break;
+	case 'd':
+	case 'D':
+		g_D = 0;
+		break;
+	case 'q':
+	case 'Q':
+		g_Q = 0;
+		break;
+	case 'e':
+	case 'E':
+		g_E = 0;
+		break;
+	}
+}
+
+void InitGlut::Special(int key, int x, int y)
+{
+
+}
+
+void InitGlut::SpecialUp(int key, int x, int y)
+{
+
 }
 
 void InitGlut::EnterFullscreen()

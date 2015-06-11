@@ -5,6 +5,7 @@
 #include <GL/freeglut.h>
 
 #include <Rendering/Vertex.h>
+#include <Rendering/Camera.h>
 
 namespace Rendering
 {
@@ -12,7 +13,7 @@ namespace Rendering
 	{
 	public:
 		virtual ~IGameObject() = 0;
-		virtual void Draw() = 0;
+		virtual void Draw(Camera* camera) = 0;
 		virtual void Update() = 0;
 		virtual void SetProgram(GLuint shaderName) = 0;
 		virtual void Destroy() = 0;

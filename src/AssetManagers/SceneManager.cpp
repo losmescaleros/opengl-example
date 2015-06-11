@@ -20,6 +20,20 @@ SceneManager::~SceneManager()
 {
 	delete shaderManager;
 	delete modelManager;
+	delete camera;
+}
+
+void SceneManager::SetCamera(const glm::vec3& position, int viewPortWidth, int viewPortHeight)
+{
+	camera = new Camera();
+	camera->SetPosition(position);
+	camera->SetViewport(0, 0, viewPortWidth, viewPortHeight);
+	camera->SetProjectionRH(60.0f, viewPortWidth / (float)viewPortHeight, 0.1f, 100.0f);
+}
+
+Camera* SceneManager::GetActiveCamera()
+{
+	return camera;
 }
 
 void SceneManager::NotifyBeginFrame()
@@ -33,7 +47,7 @@ void SceneManager::NotifyDisplayFrame()
 	glClearColor(0.0, 0.0, 0.0, 1.0);
 	glClearDepth(1.0f);
 
-	modelManager->Draw();
+	modelManager->Draw(camera);
 }
 
 void SceneManager::NotifyEndFrame()
@@ -43,5 +57,5 @@ void SceneManager::NotifyEndFrame()
 
 void SceneManager::NotifyReshape(int width, int height, int prevWidth, int prevHeight)
 {
-
+	camera->SetViewport(0, 0, width, height); camera->SetProjectionRH(60.0f, width / (float)height, 0.1f, 100.0f);
 }

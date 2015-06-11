@@ -50,13 +50,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>extern\glew-1.12.0\include\;extern\glm-0.9.6.3\;include\;extern\freeglut-2.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>extern\glew-1.12.0\include\;extern\glm-0.9.6.3\;include\;extern\assimp-3.1.1\include\;extern\freeglut-2.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions);WIN32</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>extern\glew-1.12.0\lib\Debug\Win32;extern\freeglut-2.8.1\lib\x86\Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>freeglut.lib;freeglut_static.lib;glew32s.lib;glew32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>extern\assimp-3.1.1\lib;extern\glew-1.12.0\lib\Debug\Win32;extern\freeglut-2.8.1\lib\x86\Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;freeglut_static.lib;glew32s.lib;glew32.lib;assimpd.lib</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>
     </Link>
@@ -68,15 +68,15 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>extern\glew-1.12.0\include\;extern\glm-0.9.6.3\;include\;extern\freeglut-2.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>extern\glew-1.12.0\include\;extern\glm-0.9.6.3\;include\;extern\assimp-3.1.1\include\;extern\freeglut-2.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>extern\glew-1.12.0\lib\Release\Win32;extern\freeglut-2.8.1\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>freeglut.lib;freeglut_static.lib;glew32s.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>extern\assimp-3.1.1\lib;extern\glew-1.12.0\lib\Release\Win32;extern\freeglut-2.8.1\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;freeglut_static.lib;glew32s.lib;assimp.lib</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>
     </Link>

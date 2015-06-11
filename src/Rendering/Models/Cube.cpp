@@ -74,17 +74,12 @@ void Cube::Create()
 	this->vbos.push_back(vbo);
 }
 
-void Cube::Draw()
+void Cube::Draw(Camera* camera)
 {
 	glUseProgram(program);
 	glBindVertexArray(vao);
-	float a[16] = {
-		1.299, 0, 0, 0,
-		0, 1.732, 0, 0,
-		0, 0, -1.002, -1,
-		0, 0, 9.82, 10
-	};
-	glm::mat4 mvp = glm::make_mat4(a);
+	
+	glm::mat4 mvp = camera->GetProjectionMatrix() * camera->GetViewMatrix() * glm::toMat4(camera->GetRotation());
 	GLint uniformMvp = -1;
 	uniformMvp = glGetUniformLocation(program, "MVP");
 	glUniformMatrix4fv(uniformMvp, 1, GL_FALSE, glm::value_ptr(mvp));

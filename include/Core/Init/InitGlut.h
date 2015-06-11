@@ -5,6 +5,7 @@
 #include <Core/Init/InitGlew.h>
 #include <Core/Init/IListener.h>
 #include <Core/Init/DebugOutput.h>
+#include <Rendering/Camera.h>
 
 #include <iostream>
 
@@ -30,6 +31,10 @@ namespace Core
 			static void DisplayCallback();
 			static void ReshapeCallback(int width, int height);
 			static void CloseCallback();
+			static void Keyboard(unsigned char c, int x, int y);
+			static void KeyboardUp(unsigned char c, int x, int y);
+			static void Special(int key, int x, int y);
+			static void SpecialUp(int key, int x, int y);
 			static Core::IListener* listener;
 			static Core::Window window;
 		};

@@ -22,7 +22,7 @@ namespace AssetManagers
 		ModelManager();
 		~ModelManager();
 
-		void Draw();
+		void Draw(Camera* camera);
 		void Update();
 		void DeleteModel(const std::string &modelName);
 		const IGameObject& GetModel(const std::string &modelName);

@@ -13,7 +13,7 @@ namespace Rendering
 
 			void Create();
 			virtual void Update() override final;
-			virtual void Draw() override final;
+			virtual void Draw(Camera* camera) override final;
 		};
 	}
 }

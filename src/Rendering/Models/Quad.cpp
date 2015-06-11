@@ -42,7 +42,7 @@ void Quad::Create()
 
 void Quad::Update(){}
 
-void Quad::Draw()
+void Quad::Draw(Camera* camera)
 {
 	glUseProgram(program);
 	glBindVertexArray(vao);

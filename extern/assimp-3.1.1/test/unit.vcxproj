@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B4202B4A-A696-4BA1-8344-D3D2DA331E88}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>unit</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\LosMescaleros\Desktop\assimpExample\test\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">unit.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">unit</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\LosMescaleros\Desktop\assimpExample\test\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">unit.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">unit</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\LosMescaleros\Desktop\assimpExample\test\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">unit.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">unit</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\LosMescaleros\Desktop\assimpExample\test\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">unit.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">unit</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\LosMescaleros\Desktop\assimpExample;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\include;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code\BoostWorkaround;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\zlib;C:\Users\LosMescaleros\Desktop\assimpExample\contrib\zlib;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\LosMescaleros\Desktop\assimpExample;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\include;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code\BoostWorkaround;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\zlib;C:\Users\LosMescaleros\Desktop\assimpExample\contrib\zlib;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\LosMescaleros\Desktop\assimpExample;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\include;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code\BoostWorkaround;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\zlib;C:\Users\LosMescaleros\Desktop\assimpExample\contrib\zlib;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\code\Debug\assimpd.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3d9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib;comctl32.lib;Winmm.lib;..\contrib\zlib\Debug\zlibstaticd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/LosMescaleros/Desktop/assimpExample;C:/Users/LosMescaleros/Desktop/assimpExample/$(Configuration);/lib;/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/LosMescaleros/Desktop/assimpExample/test/Debug/unit.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/LosMescaleros/Desktop/assimpExample/test/Debug/unit.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\LosMescaleros\Desktop\assimpExample;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\include;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code\BoostWorkaround;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\zlib;C:\Users\LosMescaleros\Desktop\assimpExample\contrib\zlib;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\LosMescaleros\Desktop\assimpExample;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\include;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code\BoostWorkaround;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\zlib;C:\Users\LosMescaleros\Desktop\assimpExample\contrib\zlib;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\LosMescaleros\Desktop\assimpExample;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\include;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code\BoostWorkaround;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\zlib;C:\Users\LosMescaleros\Desktop\assimpExample\contrib\zlib;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\code\Release\assimp.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3d9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib;comctl32.lib;Winmm.lib;..\contrib\zlib\Release\zlibstatic.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/LosMescaleros/Desktop/assimpExample;C:/Users/LosMescaleros/Desktop/assimpExample/$(Configuration);/lib;/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/LosMescaleros/Desktop/assimpExample/test/Release/unit.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/LosMescaleros/Desktop/assimpExample/test/Release/unit.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\LosMescaleros\Desktop\assimpExample;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\include;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code\BoostWorkaround;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\zlib;C:\Users\LosMescaleros\Desktop\assimpExample\contrib\zlib;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\LosMescaleros\Desktop\assimpExample;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\include;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code\BoostWorkaround;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\zlib;C:\Users\LosMescaleros\Desktop\assimpExample\contrib\zlib;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\LosMescaleros\Desktop\assimpExample;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\include;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code\BoostWorkaround;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\zlib;C:\Users\LosMescaleros\Desktop\assimpExample\contrib\zlib;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\code\MinSizeRel\assimp.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3d9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib;comctl32.lib;Winmm.lib;..\contrib\zlib\MinSizeRel\zlibstatic.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/LosMescaleros/Desktop/assimpExample;C:/Users/LosMescaleros/Desktop/assimpExample/$(Configuration);/lib;/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/LosMescaleros/Desktop/assimpExample/test/MinSizeRel/unit.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/LosMescaleros/Desktop/assimpExample/test/MinSizeRel/unit.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\LosMescaleros\Desktop\assimpExample;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\include;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code\BoostWorkaround;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\zlib;C:\Users\LosMescaleros\Desktop\assimpExample\contrib\zlib;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\LosMescaleros\Desktop\assimpExample;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\include;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code\BoostWorkaround;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\zlib;C:\Users\LosMescaleros\Desktop\assimpExample\contrib\zlib;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\LosMescaleros\Desktop\assimpExample;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\include;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code\BoostWorkaround;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\zlib;C:\Users\LosMescaleros\Desktop\assimpExample\contrib\zlib;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\code;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\code\RelWithDebInfo\assimp.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3d9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib;comctl32.lib;Winmm.lib;..\contrib\zlib\RelWithDebInfo\zlibstatic.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/LosMescaleros/Desktop/assimpExample;C:/Users/LosMescaleros/Desktop/assimpExample/$(Configuration);/lib;/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/LosMescaleros/Desktop/assimpExample/test/RelWithDebInfo/unit.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/LosMescaleros/Desktop/assimpExample/test/RelWithDebInfo/unit.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/LosMescaleros/Downloads/assimp-3.1.1/assimp-3.1.1/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/LosMescaleros/Downloads/assimp-3.1.1/assimp-3.1.1 -BC:/Users/LosMescaleros/Desktop/assimpExample --check-stamp-file C:\Users\LosMescaleros\Desktop\assimpExample\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/LosMescaleros/Downloads/assimp-3.1.1/assimp-3.1.1/test/CMakeLists.txt;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\CMakeLists.txt;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\cmake-modules\FindDirectX.cmake;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\cmake-modules\FindPkgMacros.cmake;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\LosMescaleros\Desktop\assimpExample\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/LosMescaleros/Downloads/assimp-3.1.1/assimp-3.1.1/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/LosMescaleros/Downloads/assimp-3.1.1/assimp-3.1.1 -BC:/Users/LosMescaleros/Desktop/assimpExample --check-stamp-file C:\Users\LosMescaleros\Desktop\assimpExample\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/LosMescaleros/Downloads/assimp-3.1.1/assimp-3.1.1/test/CMakeLists.txt;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\CMakeLists.txt;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\cmake-modules\FindDirectX.cmake;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\cmake-modules\FindPkgMacros.cmake;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\LosMescaleros\Desktop\assimpExample\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/LosMescaleros/Downloads/assimp-3.1.1/assimp-3.1.1/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/LosMescaleros/Downloads/assimp-3.1.1/assimp-3.1.1 -BC:/Users/LosMescaleros/Desktop/assimpExample --check-stamp-file C:\Users\LosMescaleros\Desktop\assimpExample\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/LosMescaleros/Downloads/assimp-3.1.1/assimp-3.1.1/test/CMakeLists.txt;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\CMakeLists.txt;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\cmake-modules\FindDirectX.cmake;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\cmake-modules\FindPkgMacros.cmake;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\LosMescaleros\Desktop\assimpExample\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/LosMescaleros/Downloads/assimp-3.1.1/assimp-3.1.1/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/LosMescaleros/Downloads/assimp-3.1.1/assimp-3.1.1 -BC:/Users/LosMescaleros/Desktop/assimpExample --check-stamp-file C:\Users\LosMescaleros\Desktop\assimpExample\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/LosMescaleros/Downloads/assimp-3.1.1/assimp-3.1.1/test/CMakeLists.txt;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\CMakeLists.txt;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\cmake-modules\FindDirectX.cmake;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\cmake-modules\FindPkgMacros.cmake;C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\LosMescaleros\Desktop\assimpExample\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\UnitTestPCH.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utFindDegenerates.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utFindInvalidData.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utGenNormals.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utImporter.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utJoinVertices.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utLimitBoneWeights.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utMaterialSystem.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utPretransformVertices.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utRemoveComments.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utRemoveComponent.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utRemoveRedundantMaterials.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utScenePreprocessor.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utSharedPPData.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utSortByPType.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utSplitLargeMeshes.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utTargetAnimation.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utTriangulate.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utVertexTriangleAdjacency.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utNoBoostTest.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\DefaultProtector.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\ProtectorChain.h" />
+    <ClInclude Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\ProtectorContext.h" />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\CCompilerTest.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\Main.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\UnitTestPCH.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utFindDegenerates.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utFindInvalidData.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utFixInfacingNormals.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utGenNormals.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utImporter.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utImproveCacheLocality.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utJoinVertices.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utLimitBoneWeights.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utMaterialSystem.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utPretransformVertices.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utRemoveComments.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utRemoveComponent.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utRemoveRedundantMaterials.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utScenePreprocessor.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utSharedPPData.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utSortByPType.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utSplitLargeMeshes.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utTargetAnimation.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utTextureTransform.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utTriangulate.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utVertexTriangleAdjacency.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\utNoBoostTest.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\test\unit\BoostWorkaround\tupletest.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\AdditionalMessage.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\Asserter.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\BeOsDynamicLibraryManager.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\BriefTestProgressListener.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\CompilerOutputter.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\DefaultProtector.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\DllMain.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\DynamicLibraryManager.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\DynamicLibraryManagerException.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\Exception.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\Message.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\PlugInManager.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\PlugInParameters.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\Protector.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\ProtectorChain.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\RepeatedTest.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\ShlDynamicLibraryManager.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\SourceLine.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\StringTools.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\SynchronizedObject.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\Test.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestAssert.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestCase.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestCaseDecorator.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestComposite.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestDecorator.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestFactoryRegistry.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestFailure.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestLeaf.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestNamer.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestPath.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestPlugInDefaultImpl.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestResult.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestResultCollector.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestRunner.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestSetUp.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestSuccessListener.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestSuite.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TestSuiteBuilderContext.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TextOutputter.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TextTestProgressListener.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TextTestResult.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TextTestRunner.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\TypeInfoHelper.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\UnixDynamicLibraryManager.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\Win32DynamicLibraryManager.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\XmlDocument.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\XmlElement.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\XmlOutputter.cpp"  />
+    <ClCompile Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\contrib\cppunit-1.12.1\src\cppunit\XmlOutputterHook.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/LosMescaleros/Desktop/assimpExample/ZERO_CHECK.vcxproj">
+      <Project>5DFD97CC-0083-47DF-9861-0049F190A3CF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/LosMescaleros/Desktop/assimpExample/code/assimp.vcxproj">
+      <Project>185C44FE-6307-408E-B501-F73ABBA0A42F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/LosMescaleros/Desktop/assimpExample/contrib/zlib/zlibstatic.vcxproj">
+      <Project>16DCE443-9F06-42C7-A9ED-0278C903C36F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\LosMescaleros\Downloads\assimp-3.1.1\assimp-3.1.1\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\LosMescaleros\Desktop\assimpExample\CMakeFiles\9751b2b11ecd6337342b0173b041f109\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\LosMescaleros\Desktop\assimpExample\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B640AD0F-AD06-44D9-971B-655CF0ADB1E0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

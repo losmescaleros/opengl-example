@@ -1,0 +1,8 @@
+C:/Users/LosMescaleros/Desktop/assimpExample/tools/assimp_view/CMakeFiles/assimp_viewer.dir
+C:/Users/LosMescaleros/Desktop/assimpExample/CMakeFiles/uninstall.dir
+C:/Users/LosMescaleros/Desktop/assimpExample/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir
+C:/Users/LosMescaleros/Desktop/assimpExample/test/CMakeFiles/unit.dir
+C:/Users/LosMescaleros/Desktop/assimpExample/code/CMakeFiles/assimp.dir
+C:/Users/LosMescaleros/Desktop/assimpExample/contrib/zlib/CMakeFiles/ALL_BUILD.dir
+C:/Users/LosMescaleros/Desktop/assimpExample/CMakeFiles/ZERO_CHECK.dir
+C:/Users/LosMescaleros/Desktop/assimpExample/contrib/zlib/CMakeFiles/zlibstatic.dir

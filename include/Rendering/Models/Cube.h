@@ -12,7 +12,7 @@ namespace Rendering
 			~Cube();
 
 			void Create();
-			virtual void Draw() override final;
+			virtual void Draw(Camera* camera) override final;
 			virtual void Update() override final;
 		};
 	}

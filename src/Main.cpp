@@ -3,6 +3,9 @@
 #include <AssetManagers/ModelManager.h>
 #include <Core/Init/InitGlut.h>
 #include <AssetManagers/SceneManager.h>
+#include <assimp/Importer.hpp>
+#include <assimp/scene.h>
+#include <assimp/postprocess.h>
 
 using namespace Core;
 using namespace Core::Init;
@@ -27,8 +30,9 @@ int main(int argc, char* argv[])
 	FrameBuffer frameBuffer(true, true, true, true);
 	InitGlut::Init(window, context, frameBuffer);
 	IListener* scene = new AssetManagers::SceneManager();
+	scene->SetCamera(glm::vec3(0, 0, 10), 800, 600);
 	InitGlut::SetListener(scene);
-
+	Assimp::Importer importer;
 	InitGlut::Run();
 	
 	delete scene;
